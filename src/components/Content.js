@@ -39,7 +39,7 @@ const Content = () => {
                         <input type="text" placeholder="Телефон" className="font-montserrat-regular"/>
                         <span className="icon icon-tel"/>
                     </div>
-                    <button type="button" className="font-montserrat-semi-bold">Оставить заявку на экскурсию</button>
+                    <button type="button" className="font-montserrat-semi-bold btn_apply">Оставить заявку на экскурсию</button>
                     <span>Нажимая кнопку “Отправить” вы соглашаетесь <br/> с <a href="#">политикой конфиденциальности</a></span>
                 </div>
             </div>
