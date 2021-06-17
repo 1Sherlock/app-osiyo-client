@@ -1,0 +1,75 @@
+/**
+ * Created by Sherlock on 10.06.2021.
+ */
+
+
+@font-face {
+  font-family: "Mazzard-Bold";
+  src: url("/fonts/Mazzard/MazzardM-Bold.ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Mazzard-SemiBold";
+  src: url("/fonts/Mazzard/MazzardM-SemiBold.ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url("/fonts/Montserrat/Montserrat-Bold.ttf");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url("/fonts/Montserrat/Montserrat-Regular.ttf");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat-Medium";
+  src: url("/fonts/Montserrat/Montserrat-Medium.ttf");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat-ExtraLight";
+  src: url("/fonts/Montserrat/Montserrat-ExtraLight.ttf");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat-SemiBold";
+  src: url("/fonts/Montserrat/Montserrat-SemiBold.ttf");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Mazzard-Regular";
+  src: url("/fonts/Mazzard/MazzardM-Regular.ttf");
+  font-display: swap;
+}
+
+.font-mazzard-bold{
+  font-family: "Mazzard-Bold", sans-serif;
+}
+.font-mazzard-semi-bold{
+  font-family: "Mazzard-SemiBold", sans-serif;
+}
+.font-mazzard-regular{
+  font-family: "Mazzard-Regular", sans-serif;
+}
+
+.font-montserrat-bold{
+  font-family: "Montserrat-Bold", sans-serif;
+}
+
+.font-montserrat-semi-bold{
+  font-family: "Montserrat-SemiBold", sans-serif;
+}
+
+.font-montserrat-regular{
+  font-family: "Montserrat-Regular", sans-serif;
+}
+.font-montserrat-medium{
+  font-family: "Montserrat-Medium", sans-serif;
+}
+.font-montserrat-extra-light{
+  font-family: "Montserrat-ExtraLight", sans-serif;
+}
