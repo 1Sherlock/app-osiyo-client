@@ -6,13 +6,12 @@ import React, { useState } from 'react';
 
 const NavBar = (props) => {
     const{scroll, count, setScroll} = props;
-    const [open,setOpen] = useState(false)
+    const [open,setOpen] = useState(false);
+    const [lang, setLang] = useState("RU")
     const openDropdown = (e) => {
         setOpen(!open)
-        if (e.target.matches(".dropdonText")) {
-            document.querySelector(".activeLang").textContent = e.target.textContent
-        }
     }
+
     return (
         <div className="navbar d-flex justify-content-between align-items-center">
             <div className="d-flex align-items-center">
@@ -27,13 +26,13 @@ const NavBar = (props) => {
                     <li><a href="#" className={`${(scroll <= 0 && scroll >= -count/2) || (scroll <= -count * 1.9 && scroll >= -count * 2.5) || (scroll <= -count * 4.9 && scroll >= -count * 5.5) || (scroll <= -count * 7.9 && scroll >= - count * 8.5) || (scroll <= -count * 11.9 && scroll >= -count * 12.5) || (scroll <= -count * 13.9 && scroll >= -count * 14.5) ? 'theme' : ''}`} onClick={() => setScroll(12)}>Благоустройство</a></li>
                     <li><a href="#" className={`${(scroll <= 0 && scroll >= -count/2) || (scroll <= -count * 1.9 && scroll >= -count * 2.5) || (scroll <= -count * 4.9 && scroll >= -count * 5.5) || (scroll <= -count * 7.9 && scroll >= - count * 8.5) || (scroll <= -count * 11.9 && scroll >= -count * 12.5) || (scroll <= -count * 13.9 && scroll >= -count * 14.5) ? 'theme' : ''}`} onClick={() => setScroll(14)}>Сервис</a></li>
                     <li><a href="#" className={`${(scroll <= 0 && scroll >= -count/2) || (scroll <= -count * 1.9 && scroll >= -count * 2.5) || (scroll <= -count * 4.9 && scroll >= -count * 5.5) || (scroll <= -count * 7.9 && scroll >= - count * 8.5) || (scroll <= -count * 11.9 && scroll >= -count * 12.5) || (scroll <= -count * 13.9 && scroll >= -count * 14.5) ? 'theme' : ''}`} onClick={() => setScroll(16)}>Контакты</a></li>
-                    <li className={`langDropdown `} onClick={openDropdown}>
-                      <p className={`activeLang font-montserrat-medium ${(scroll <= 0 && scroll >= -count/2) || (scroll <= -count * 1.9 && scroll >= -count * 2.5) || (scroll <= -count * 4.9 && scroll >= -count * 5.5) || (scroll <= -count * 7.9 && scroll >= - count * 8.5) || (scroll <= -count * 11.9 && scroll >= -count * 12.5) || (scroll <= -count * 13.9 && scroll >= -count * 14.5) ? 'theme' : ''}`}>RU</p>
+                    <li className={`langDropdown align-items-center`} >
+                      <p onClick={openDropdown} className={`activeLang font-montserrat-medium d-flex align-items-center ${(scroll <= 0 && scroll >= -count/2) || (scroll <= -count * 1.9 && scroll >= -count * 2.5) || (scroll <= -count * 4.9 && scroll >= -count * 5.5) || (scroll <= -count * 7.9 && scroll >= - count * 8.5) || (scroll <= -count * 11.9 && scroll >= -count * 12.5) || (scroll <= -count * 13.9 && scroll >= -count * 14.5) ? 'theme' : ''}`}>{lang} <span className="icon icon-bottom"/></p>
                       <div className={`dropdown ${open ? "active" : ""}`}>
-                          <p className="dropdonText font-montserrat-medium">ENG</p> 
-                          <p className="dropdonText font-montserrat-medium">RU</p> 
-                          <p className="dropdonText font-montserrat-medium">UZ</p> 
-                      </div>  
+                          <p className="dropdonText font-montserrat-medium" onClick={() => {setLang('ENG'); setOpen(false)}}>ENG</p>
+                          <p className="dropdonText font-montserrat-medium" onClick={() => {setLang('RU'); setOpen(false)}}>RU</p>
+                          <p className="dropdonText font-montserrat-medium" onClick={() => {setLang('UZ'); setOpen(false)}}>UZ</p>
+                      </div>
                     </li>
 
                     <li className="">

@@ -73,6 +73,11 @@ p {
     -webkit-mask-image: url("/icons/sale.svg");
   }
 
+  &.icon-bottom{
+    mask-image: url("/icons/bottom.svg");
+    -webkit-mask-image: url("/icons/bottom.svg");
+  }
+
   &.icon-mouse {
     mask-image: url("/icons/mouse.svg");
     -webkit-mask-image: url("/icons/mouse.svg");
@@ -1397,17 +1402,17 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 2vw;
+  height: 2.89vh;
 
   .activeLang {
     margin: 0;
     font-size: 0.83vw;
-    line-height: 2.89vh;
+    line-height: 1;
     position: relative;
     cursor: pointer;
     transition: linear all 0.5s;
     text-align: center;
-
+    height: 2.89vh;
     &:after {
       content: '';
       width: 0;
@@ -1427,9 +1432,21 @@ body {
       }
     }
 
+    span{
+      background-color: $color-text;
+      width: 10px;
+      margin-left: 10px;
+      flex-shrink: 0;
+      height: 2.89vh;
+    }
+
     &.theme {
       transition: linear all 0.5s;
       color: #ffffff;
+
+      span{
+        background-color: #FFFFFF;
+      }
 
       &:after {
         background-color: #FFFFFF;
