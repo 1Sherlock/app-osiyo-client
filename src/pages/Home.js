@@ -10,9 +10,11 @@ import Scroll from "../components/Scroll";
 const Home = () => {
     return (
         <div>
+           
             <NavBar/>
             <Content/>
             <Scroll/>
+           
         </div>
     );
 };

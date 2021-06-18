@@ -15,37 +15,37 @@ const ContentEleven = () => {
                         <div className="eleven-icon">
                             <span className="icon icon-sale"/>
                         </div>
-                        <p>На территории объекта будут расположены кафе, рестораны и другие точки общепита</p>
+                        <p>Удобная инфраструктура  и понятная навигация на объекте.</p>
                     </div>
                     <div className="content-eleven-item d-flex align-items-center">
                         <div className="eleven-icon">
                             <span className="icon icon-shipping"/>
                         </div>
-                        <p>На территории объекта будут расположены кафе, рестораны и другие точки общепита</p>
+                        <p>Продуманная логистика  для удобства покупателей  и владельцев.</p>
                     </div>
                     <div className="content-eleven-item d-flex align-items-center">
                         <div className="eleven-icon">
                             <span className="icon icon-settings"/>
                         </div>
-                        <p>На территории объекта будут расположены кафе, рестораны и другие точки общепита</p>
+                        <p>Превосходный сервис  и обученный персонал.</p>
                     </div>
                     <div className="content-eleven-item d-flex align-items-center">
                         <div className="eleven-icon">
                             <span className="icon icon-group"/>
-                        </div>
-                        <p>обеспечивающие клиентам возможность подкрепить свои силы для дальнейшего времяпровождения</p>
+                        </div> 
+                        <p>Инновационный подход  ко многим задачам для современного рынка.</p>
                     </div>
                     <div className="content-eleven-item d-flex align-items-center">
                         <div className="eleven-icon">
                             <span className="icon icon-hours"/>
                         </div>
-                        <p>На территории объекта будут расположены кафе, рестораны и другие точки общепита</p>
+                        <p>Контактная поддержка 24/7  и своевременное решение вопросов.</p>
                     </div>
                     <div className="content-eleven-item d-flex align-items-center">
                         <div className="eleven-icon">
                             <span className="icon icon-secure"/>
                         </div>
-                        <p>На территории объекта будут расположены кафе, рестораны и другие точки общепита</p>
+                        <p>Безопасность хранения товаров как в магазинах, так  и на складских зонах.</p>
                     </div>
                 </div>
             </div>

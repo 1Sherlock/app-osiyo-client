@@ -28,10 +28,12 @@ import Scroll from "../components/Scroll";
 const Main = () => {
     const [scrollWidth, setScrollWidth] = useState(0);
     const [count, setCount] = useState(false);
+    const [state,setState] = useState(false)
     const [scrollText, setScrollText] = useState(<><span className="icon icon-mouse"/> скролл</>);
 
     useEffect(() => {
         let el = document.getElementById("main");
+        document.querySelector(".contactBlok").style.display = "none"
 
         Aos.init();
         setCount(el.clientWidth);
@@ -40,6 +42,7 @@ const Main = () => {
 
 
     const scroll = (event) => {
+        
         let el = document.getElementById("main");
         setCount(el.clientWidth);
         if (event.deltaY < 0) {
@@ -57,19 +60,53 @@ const Main = () => {
                 setScrollWidth(scrollWidth - 100)
             }
             console.log('scrolling down');
+            
         }
-
-
+        console.log(Math.abs(scrollWidth));
+        if (Math.abs(scrollWidth) < 3500) {
+            document.querySelector(".contactBlok").style.display = "none"
+        } else {
+            document.querySelector(".contactBlok").style.display = "block" 
+        }
+      
+      
+     
+        
     };
 
     const setScroll = (value) => {
         let el = document.getElementById("main")
         setScrollWidth(0 - value * el.clientWidth);
     }
+
     return (
         <div className="main" onWheel={scroll} >
             <NavBar scroll={scrollWidth} count={count} setScroll={setScroll}/>
-           <div id="main" className="section" style={{transform: `translateX(${scrollWidth}px)`}}>
+            <div className="contactBlok" >
+            <div className={`contactBlokBody ${state ? "active" : ""}`}>
+                <a href="https://t.me/FUTBOLTV" className="phone_btn" target="_blank">
+                 <span className="icon icon-telegram">
+                 </span> 
+                </a>
+                <a href="mailto:bekzodrakhmonov1995@gmail.com" className="phone_btn" >
+                 <span className="icon icon-message">
+                 </span> 
+                </a>
+                <a href="tel:+998990896095" className="phone_btn">
+                 <span className="icon icon-tel">
+                 </span> 
+                </a>
+                <a href="#" className="phone_btn" onClick={() => setState(false)}>
+                 <span className="icon icon-arrow">
+                 </span> 
+                </a>
+                </div>
+                <button className={`phone_btn ${state ? "hide" : "active"}`} onClick={() => setState(true)}>
+                 <span className="icon icon-tel">
+                 </span> 
+                </button>
+            </div>
+            <div id="main" className="section" style={{transform: `translateX(${scrollWidth}px)`}}>
                <Content/>
                <ContentSecond/>
                <ContentThird/>

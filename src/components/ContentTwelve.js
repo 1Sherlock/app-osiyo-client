@@ -39,18 +39,17 @@ const ContentTwelve = () => {
                     </div>
                     <div className="d-flex align-items-center item">
                         <span className="circle circle-red"/>
-                        Вещевой сегмент
+                        Одежда и обувь
                     </div>
                     <div className="d-flex align-items-center item">
                         <span className="circle circle-blue"/>
-                        Бытовая техника <br/>
-                        и аппаратура
+                        Бытовая техника <br/>и электроприборы
+
                     </div>
                 </div>
                 <div>
                     <div className="d-flex align-items-center item">
-                        <span className="circle circle-aqua"/>
-                        Трикотаж
+                        <span className="circle circle-aqua"/>Ткани и <br/> трикотажные <br/>изделия
                     </div>
                     <div className="d-flex align-items-center item">
                         <span className="circle circle-yellow"/>
