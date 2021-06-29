@@ -30,6 +30,10 @@ import NewNavbar from "../components/new/NewNavbar";
 import NewContentTwo from "../components/new/NewContentTwo";
 import NewContentThree from "../components/new/NewContentThree";
 import NewContentFive from "../components/new/NewContentFive";
+import NewContentEight from "../components/new/NewContentEight";
+import NewContentNine from "../components/new/NewContentNine";
+import NewContentEleven from "../components/new/NewContentEleven";
+import NewContentTwelve from "../components/new/NewContentTwelve";
 
 const Main = () => {
     const [scrollWidth, setScrollWidth] = useState(0);
@@ -191,6 +195,10 @@ const Main = () => {
                 <NewContentThree/>
 
                 <NewContentFive/>
+                <NewContentEight/>
+                <NewContentNine/>
+                <NewContentEleven/>
+                <NewContentTwelve/>
             </div>
             {/*<Scroll scroll={scrollWidth} count={count} scrollText={scrollText}/>*/}
 

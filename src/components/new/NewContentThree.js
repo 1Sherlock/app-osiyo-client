@@ -12,7 +12,7 @@ const NewContentThree = () => {
 
              <div className="sub-content-child">
                  <div className="first-child">
-                     <h2 className="font-gilroy-light">
+                     <h2 className="font-gilroy-medium">
                          Искусство медиапланирования
                      </h2>
                      <p className="font-gilroy-light">
@@ -20,7 +20,7 @@ const NewContentThree = () => {
                      </p>
                  </div>
                  <div className="second-child">
-                     <h2 className="font-gilroy-light">
+                     <h2 className="font-gilroy-medium">
                          Ценовая стратегия исключительно
                      </h2>
                      <p className="font-gilroy-light">
