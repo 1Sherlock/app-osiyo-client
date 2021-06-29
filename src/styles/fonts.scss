@@ -46,8 +46,18 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: "Mazzard-Medium";
+  src: url("/fonts/Mazzard/MazzardM-Medium.ttf");
+  font-display: swap;
+}
+
+
 .font-mazzard-bold{
   font-family: "Mazzard-Bold", sans-serif;
+}
+.font-mazzard-medium{
+  font-family: "Mazzard-Medium", sans-serif;
 }
 .font-mazzard-semi-bold{
   font-family: "Mazzard-SemiBold", sans-serif;

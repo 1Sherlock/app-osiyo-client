@@ -1,0 +1,8 @@
+Barcha autentifikatsiya usullari har xil hisoblanadi. Ularning hech biri bir xil strukturaga,
+bir xil ishlatilish usuliga ega emas va ularning har biri alohida talablarga javob beradi.
+Bundan tashqari bitta autentifikatsiya usulining har xil realizatsiya qilish har xil xavfsizlik
+darajalarini kafolatlaydi. Masalan, agar siz kuchli xavfsizlikka ega autentifikatsiya usulidan foydalanmoqchi bo'lsangiz,
+lekin uni to'g'ri joyda qo'llamasdan, to'g'ri realizatsiya qila olmasangiz, unda bu usul xavfsizligi past darajada bo'ladi.
+Har bir autentifikatsiya usuli o'zining qulayliklari va muammolariga ega. 2.1.1-jadvalda har xil autentifikatsiya usullarining
+har xil kriteriyalar bo'yicha solishtirilgan. Bunda quyidagi kriteriyalar bo'yicha solishtirish ishlari olib borilgan:
+- Kuzatilayotgan mashxurligi - 

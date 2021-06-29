@@ -4,22 +4,28 @@
 
 import React from 'react';
 
-const ContentFourth = () => {
+const ContentFourth = (props) => {
     return (
         <div className="content-fourth d-flex">
             <div className="content-fourth-left">
-                <span>01</span>
+                <span className="animate-text">01</span>
 
-                <h4 className="font-mazzard-semi-bold">Здесь зарождается <br/>
+                <h4 className="font-mazzard-semi-bold animate-text animate-text-1">Здесь зарождается <br/>
                     торговля</h4>
 
-                <p>
-                    На территории объекта будут расположены кафе, рестораны и другие точки общепита, обеспечивающие клиентам возможность подкрепить свои силы для дальнейшего времяпровождения в центре оптовой торговли «Osiyo»
-                </p>
+                <p className="animate-text animate-text-3">
+                    На территории объекта будут расположены кафе, рестораны и другие точки общепита, обеспечивающие клиентам <br/><br/>
+
+                    Возможность подкрепить свои силы для дальнейшего времяпровождения в центре оптовой торговли «Osiyo»
+                    </p>
 
             </div>
             <div className="content-fourth-right">
-                <img src="/images/fourth-img.png" alt=""/>
+                <div className="img-wrap">
+                    <div className="img">
+                        <img src="/images/fourth-img.png" style={{transform: `translateX(${props.scrollWidth/150}%)`}} alt=""/>
+                    </div>
+                </div>
                 {/*<div className="next-btn">*/}
                 {/*    <img src="/icons/chevron-left-black.svg" alt=""/>*/}
                 {/*    <p>далее</p>*/}

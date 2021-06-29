@@ -24,40 +24,110 @@ import ContentSixTeen from "../components/ContentSixTeen";
 import ContentSevenTeen from "../components/ContentSevenTeen";
 import ContentEightTeen from "../components/ContentEightTeen";
 import Scroll from "../components/Scroll";
+import ContentN from "../components/ContentN";
 
 const Main = () => {
     const [scrollWidth, setScrollWidth] = useState(0);
     const [count, setCount] = useState(false);
     const [state, setState] = useState(false)
     const [scrollText, setScrollText] = useState(<><span className="icon icon-mouse"/> скролл</>);
+    const [number, setNumber] = useState(0);
+    let scrollTimer;
+
 
     useEffect(() => {
         let el = document.getElementById("main");
         Aos.init();
         setCount(el.clientWidth);
-    }, [])
+        if (Math.abs(Math.round(Math.abs(scrollWidth) / count) * count - Math.abs(scrollWidth)) < 200){
+            setScrollWidth(-Math.round(Math.abs(scrollWidth) / count) * count);
+        }
+        const scrollElements = document.querySelectorAll(".animate-text");
+        const scrollImages = document.querySelectorAll(".img-wrap");
+        scrollElements.forEach((el) => {
+            if (el.getBoundingClientRect().left <= count){
+                el.classList.add("animate-text-active");
+            }
+        });
+        scrollImages.forEach((el) => {
+            if (el.getBoundingClientRect().left <= count - 100){
+                el.classList.add("active")
+            }
+        })
+    }, [scrollWidth])
 
 
-    const scroll = (event) => {
+    const scroll = (event)  => {
+        clearInterval(scrollTimer);
+
+        scrollTimer = setTimeout(() => {
+            if (number >=5){
+                setScrollWidth(-Math.round(Math.abs(scrollWidth) / count) * count);
+                setNumber(0);
+                const scrollElements = document.querySelectorAll(".animate-text");
+                const scrollImages = document.querySelectorAll(".img-wrap");
+                scrollElements.forEach((el) => {
+                    if (el.getBoundingClientRect().left <= count){
+                        el.classList.add("animate-text-active");
+                    }
+                });
+                scrollImages.forEach((el) => {
+                    if (el.getBoundingClientRect().left <= count - 100){
+                        el.classList.add("active")
+                    }
+                })
+            }
+            clearInterval(scrollTimer)
+        }, 500);
+        setTimeout(() => {
+            const scrollElements = document.querySelectorAll(".animate-text");
+            const scrollImages = document.querySelectorAll(".img-wrap");
+            scrollElements.forEach((el) => {
+                if (el.getBoundingClientRect().left <= count){
+                    el.classList.add("animate-text-active");
+                }
+            });
+            scrollImages.forEach((el) => {
+                if (el.getBoundingClientRect().left <= count - 100){
+                    el.classList.add("active")
+                }
+            })
+        }, 2000)
+        setNumber(number + 1);
 
         let el = document.getElementById("main");
         setCount(el.clientWidth);
+        // const value = el.clientWidth / 20;
+        // const value = el.clientWidth;
+        const value = 200;
         if (event.deltaY < 0) {
-            if (Math.abs(scrollWidth) < 100) {
+            if (Math.abs(scrollWidth) < value) {
                 setScrollWidth(0);
             } else {
-                setScrollWidth(scrollWidth + 100);
+                setScrollWidth(scrollWidth + value);
             }
             console.log('scrolling up');
         } else if (event.deltaY > 0) {
-            if ((el.scrollWidth - el.clientWidth) - (Math.abs(scrollWidth)) < 100) {
+            if ((el.scrollWidth - el.clientWidth) - (Math.abs(scrollWidth)) < value) {
                 setScrollWidth(0 - (el.scrollWidth - el.clientWidth));
             } else {
-                setScrollWidth(scrollWidth - 100)
+                setScrollWidth(scrollWidth - value);
             }
-            console.log('scrolling down');
-
         }
+
+
+        const scrollElements = document.querySelectorAll(".animate-text");
+        const scrollImages = document.querySelectorAll(".img-wrap");
+        scrollElements.forEach((el) => {
+            if (el.getBoundingClientRect().left <= count){
+                el.classList.add("animate-text-active");
+            }
+        });
+        scrollImages.forEach((el) => {
+            if (el.getBoundingClientRect().left <= count - 100){
+                el.classList.add("active")
+            }
+        })
     };
 
     const setScroll = (value) => {
@@ -91,21 +161,25 @@ const Main = () => {
             }
             <div id="main" className="section" style={{transform: `translateX(${scrollWidth}px)`}}>
                 <Content/>
-                <ContentSecond/>
+                {/*<ContentSecond/>*/}
                 <ContentThird/>
-                <ContentFourth/>
+                <ContentFourth scrollWidth={scrollWidth}/>
+                <ContentEleven/>
                 <ContentFive/>
+                <ContentN scrollWidth={scrollWidth}/>
                 <ContentSix/>
                 <ContentEight/>
                 <ContentSeven/>
                 <ContentNine/>
-                <ContentTen/>
+                <ContentTen scrollWidth={scrollWidth}/>
                 <ContentTwelve/>
-                <ContentEleven/>
+
                 <ContentThirdTeen/>
-                <ContentFourTeen/>
-                <ContentFiveTeen/>
                 <ContentSixTeen/>
+                <ContentFiveTeen/>
+                <ContentFourTeen scrollWidth={scrollWidth}/>
+
+
                 <ContentSevenTeen/>
                 {/*<ContentEightTeen/>*/}
             </div>

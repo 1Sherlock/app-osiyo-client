@@ -8,19 +8,19 @@ const ContentFive = () => {
     return (
         <div className="content-five d-flex align-items-center">
             <div className="content-five-items">
-                <h2 className="font-mazzard-semi-bold">OSIYO - это:</h2>
-                <div className="d-flex align-items-end">
-                    <h1 className="font-montserrat-extra-light">247</h1>
-                    <p>торговых <br/>
+                <h2 className="font-mazzard-bold animate-text">OSIYO - это:</h2>
+                <div className="d-flex align-items-center">
+                    <h1 className="font-montserrat-extra-light animate-text animate-text-1">247</h1>
+                    <p className="animate-text animate-text-2">торговых <br/>
                         повильонов</p>
-                    <h1 className="font-montserrat-extra-light">9000+</h1>
-                    <p>парковочных <br/>
+                    <h1 className="font-montserrat-extra-light animate-text animate-text-2">9000+</h1>
+                    <p className="animate-text animate-text-3">парковочных <br/>
                         мест</p>
-                    <h1 className="font-montserrat-extra-light">8</h1>
-                    <p>таможенных <br/>
+                    <h1 className="font-montserrat-extra-light animate-text animate-text-4">8</h1>
+                    <p className="animate-text animate-text-5">таможенных <br/>
                         складов</p>
-                    <h1 className="font-montserrat-extra-light">88</h1>
-                    <p>складских <br/>
+                    <h1 className="font-montserrat-extra-light animate-text animate-text-6">88</h1>
+                    <p className="animate-text animate-text-7">складских <br/>
                         хранилищ</p>
                 </div>
             </div>

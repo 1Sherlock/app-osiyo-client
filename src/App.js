@@ -11,12 +11,21 @@ import Six from "./pages/Six";
 import Seven from "./pages/Seven";
 import Eight from "./pages/Eight";
 import Main from "./pages/Main";
+import MediaQuery from 'react-responsive'
+import MainMobile from "./pages/MainMobile";
+import { useMediaQuery } from 'react-responsive'
 
 function App() {
+    const isDesktopOrLaptop = useMediaQuery({
+        query: '(min-device-width: 576px)'
+    })
     return (
         <BrowserRouter>
             <Switch>
-                <Route path="/" exact component={Main}/>
+                {isDesktopOrLaptop ?
+                    <Route path="/" exact component={Main}/> :
+                    <Route path="/" exact component={MainMobile}/>
+                }
                 <Route path="/second" exact component={Second}/>
                 <Route path="/third" exact component={Third}/>
                 <Route path="/fourth" exact component={Fourth}/>
