@@ -7,9 +7,9 @@ import React from 'react';
 const NewNavbar = () => {
     return (
         <div className="new-navbar d-flex justify-content-between">
-            <div>
+            <a href="#">
                 <img src="/newimages/logo.svg" alt="logo.svg" className="logo"/>
-            </div>
+            </a>
             <div className="menus">
                 <ul>
                     <li><a href="#">Локация</a></li>
@@ -19,9 +19,9 @@ const NewNavbar = () => {
                     <li><a href="#">Контакты</a></li>
                 </ul>
             </div>
-            <div className="">
-
-            </div>
+            <a href="tel:0698" className="d-flex align-items-center phone">
+                <span className="icon icon-phone"/> 0698
+            </a>
         </div>
     );
 };

@@ -8,6 +8,20 @@ $color-orange: #FF6629;
 $color-text: #531800;
 
 
+.new-navbar{
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  padding: 5.22vh 7.81vw 0 7.81vw;
+  z-index: 1;
+
+  .logo{
+    width: 11.71vw;
+  }
+
+}
+
 .new-content{
   width: 100vw;
   height: 100vh;
