@@ -4,7 +4,16 @@ const NewContentTwo = () => {
     return (
         <div className="new-content new-content-two">
 
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A amet architecto asperiores autem debitis dignissimos doloremque ducimus eaque error eum id incidunt iure odio quibusdam quos sequi similique tenetur, ullam!
+
+            <div className="sub-content">
+
+                <h1 className="font-gilroy-bold">Об объекте</h1>
+                <p className="font-gilroy-medium">OSIYO - это новый, современный центр оптовой торговли для вашего бизнеса. Благодаря своим впечатляющим
+                    размерам, на территории центра располагается большое количество объектов, создающих условия для будущих
+                    владельцев помещений, арендаторов и клиентов.</p>
+
+            </div>
+
         </div>
     );
 };
