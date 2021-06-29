@@ -174,21 +174,20 @@ html,body{
 
     background-size: 100% 100%;
     .sub-content{
+      margin-left: 7.81vw;
+
       h1{
         font-size: 3.75vw;
         margin-top: 31.11vh;
-        margin-left: 7.81vw;
         line-height: 8vh;
         color: #fff;
       }
       p{
         margin-top: 3.33vh;
-        margin-left: 7.81vw;
         width: 29.1vw;
 
         line-height: 3.55vh;
         font-size: 1.04vw;
-        font-weight: 500;
 
         color: #fff
       }
@@ -204,5 +203,127 @@ html,body{
 
     background-size: 100% 100%;
 
+    .sub-content{
+      margin-left: 7.81vw;
+      width: 28.12vw;
+
+      margin-top: 19.55vh;
+      h1{
+        color: #fff;
+        font-size: 2.91vw;
+      }
+      p{
+        color: #fff;
+        opacity: 0.5;
+        line-height: 3.55vh;
+        font-size: 1.04vw;
+        margin-top: 3.33vh;
+      }
+
+      .sub-content-child{
+        display: flex;
+        justify-content: space-between;
+
+        margin-top: 6.66vh;
+        .first-child{
+          h2{
+            color: #fff;
+            font-size: 1.14vw;
+            line-height: 3.55vh;
+          }
+          p{
+            margin-top: 2.22vh;
+          }
+        }
+
+        .second-child{
+          h2{
+            color: #fff;
+            font-size: 1.14vw;
+            line-height: 3.55vh;
+          }
+          p{
+            margin-top: 2.22vh;
+          }
+        }
+      }
+    }
   }
+
+
+
+
+  &.new-content-five{
+    width: 100vw;
+    height: 100vh;
+
+    .sub-content{
+      display: flex;
+      height: 100%;
+
+      .left-img{
+        width: 29.89vw;
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        background-image: url("../images/new/NewContentFiveBackgroundImg.png");
+
+        background-size: 100% 100%;
+      }
+
+      .right-content{
+        padding-top: 29.66vh;
+        padding-left: 2.08vw;
+
+        h1{
+          font-size: 2.5vw;
+        }
+
+        p{
+          margin-top: 4.44vh;
+          font-size: 0.9vw;
+          line-height: 3.33vh;
+          color: #594D6D;
+
+        }
+
+
+        .right-content-numbers{
+          display: flex;
+          border-top: 1px solid rgba(255, 102, 41, 0.1);
+          margin-top: 5.11vh;
+          padding-top: 10.2vh;
+          .numbers-child{
+            display: flex;
+            align-items: center;
+            margin-right: 2.08vw;
+            h3{
+              color: $color-orange;
+              font-size: 3.64vw;
+              margin: 0;
+              padding: 0;
+            }
+
+            span{
+              width: 2px;
+              height: 5.55vh;
+              background-color: $color-text;
+              margin-left: 0.6vw  ;
+              margin-right: 0.78vw;
+            }
+
+            p{
+
+              margin: 0;
+              padding: 0;
+            }
+          }
+          .numbers-child:nth-child(4){
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+
   }
