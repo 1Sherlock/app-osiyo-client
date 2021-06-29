@@ -165,4 +165,33 @@ html,body{
       }
     }
   }
+
+
+  &.new-content-two{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../images/new/NewContentTwoBackgroundImg.png");
+
+    background-size: 100% 100%;
+    .sub-content{
+      h1{
+        font-size: 3.75vw;
+        margin-top: 31.11vh;
+        margin-left: 7.81vw;
+        line-height: 8vh;
+        color: #fff;
+      }
+      p{
+        margin-top: 3.33vh;
+        margin-left: 7.81vw;
+        width: 29.1vw;
+
+        line-height: 3.55vh;
+        font-size: 1.04vw;
+        font-weight: 500;
+
+        color: #fff
+      }
+    }
+  }
 }
