@@ -8,7 +8,7 @@ $color-orange: #FF6629;
 $color-text: #531800;
 
 
-.new-navbar{
+.new-navbar {
   position: fixed;
   left: 0;
   right: 0;
@@ -16,18 +16,76 @@ $color-text: #531800;
   padding: 5.22vh 7.81vw 0 7.81vw;
   z-index: 1;
 
-  .logo{
+  .logo {
     width: 11.71vw;
   }
 
+  .menus {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+
+    li {
+      margin-right: 2.08vw;
+
+      a {
+        color: #CC7552;
+        opacity: 0.5;
+        position: relative;
+        font-size: 0.93vw;
+        line-height: 2.89vh;
+        &:after{
+          content: '';
+          position: absolute;
+          left: 0;
+          right: 0;
+          bottom: -5px;
+          width: 0;
+          margin: auto;
+          transition: all 0.3s linear;
+          background-color: #CC7552;
+          height: 2px;
+        }
+
+        &:hover, &.active{
+          opacity: 1;
+          &:after{
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  .phone{
+    background-color: $color-orange;
+    border-radius: 4.68vw;
+    padding: 1.77vh 1.3vw;
+    color: #FFFFFF;
+    font-size: 1.45vw;
+    line-height: 3.89vh;
+    letter-spacing: 0.05em;
+    font-weight: 800;
+    span{
+      background-color: #FFFFFF;
+      width: 1.66vw;
+      height: 1.66vw;
+      margin-right: 0.52vw;
+    }
+  }
+
+
+
 }
 
-.new-content{
+.new-content {
   width: 100vw;
   height: 100vh;
   flex-shrink: 0;
 
-  &.new-content-one{
+  &.new-content-one {
 
   }
 }
