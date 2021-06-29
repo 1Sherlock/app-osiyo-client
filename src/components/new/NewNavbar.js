@@ -19,6 +19,9 @@ const NewNavbar = () => {
                     <li><a href="#">Контакты</a></li>
                 </ul>
             </div>
+            <div className="">
+
+            </div>
         </div>
     );
 };
