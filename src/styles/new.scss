@@ -7,6 +7,9 @@
 $color-orange: #FF6629;
 $color-text: #531800;
 
+html,body{
+  color: $color-text;
+}
 
 .new-navbar {
   position: fixed;
@@ -86,7 +89,81 @@ $color-text: #531800;
   flex-shrink: 0;
 
   &.new-content-one {
+    background-image: url("/images/new/home-img.png");
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-size: 62.65vw;
 
+    .new-content-one-content{
+      padding-left: 7.81vw;
+      padding-top: 27.11vh;
+      h3{
+        font-size: 2.91vw;
+        line-height: 7.55vh;
+        margin-bottom: 3.33vh;
+      }
+      p{
+        font-size: 1.04vw;
+        line-height: 3.55vh;
+        margin-bottom: 4.44vh;
+      }
+      button{
+        background-color: $color-orange;
+        border-radius: 90px;
+        border: none;
+        outline: 0;
+        color: #FFFFFF;
+        padding: 2.11vh 1.45vw;
+        text-transform: capitalize;
+        font-size: 1.04vw;
+        line-height: 2.77vh;
+        cursor: pointer;
+        transition: all 0.3s linear;
+        margin-right: 1.56vw;
+        &:active{
+          transform: scale(0.9);
+        }
+      }
+      .play-item{
+        width: 3.33vw;
+        height: 3.33vw;
+        border-radius: 50%;
+        overflow: hidden;
+        position: relative;
+        .play-item-content{
+          position: absolute;
+          left: 0;
+          cursor: pointer;
+          right: 0;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+          width: 1.66vw;
+          height: 1.66vw;
+          border-radius: 50%;
+          background-color: $color-orange;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          span{
+            background-color: #FFFFFF;
+            width: 0.46vw;
+            height: 0.46vw;
+          }
+        }
+        margin-right: 12px;
+      }
+      h4{
+        font-size: 0.83vw;
+        line-height: 2.22vh;
+        margin-bottom: 0.66vh;
+      }
+      h6{
+        font-size: 0.46vw;
+        line-height: 1.22vh;
+        margin-bottom: 0;
+      }
+    }
   }
 
 
