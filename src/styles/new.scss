@@ -33,6 +33,9 @@ $color-text: #531800;
 
 
   &.new-content-two{
-
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../images/new/NewContentTwoBackgroundImg.png");
+    background-size: 100% 100%;
   }
 }
