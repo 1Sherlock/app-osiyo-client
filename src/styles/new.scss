@@ -1,0 +1,19 @@
+/**
+ * Created by Sherlock on 29.06.2021.
+ */
+
+@import "fonts";
+
+$color-orange: #FF6629;
+$color-text: #531800;
+
+
+.new-content{
+  width: 100vw;
+  height: 100vh;
+  flex-shrink: 0;
+
+  &.new-content-one{
+
+  }
+}

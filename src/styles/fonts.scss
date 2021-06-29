@@ -52,9 +52,43 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: "Gilroy-Medium";
+  src: url("/fonts/Gilroy/Gilroy-Medium.ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gilroy-Bold";
+  src: url("/fonts/Gilroy/Gilroy-Bold.ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gilroy-Light";
+  src: url("/fonts/Gilroy/Gilroy-Light.ttf");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gilroy-Regular";
+  src: url("/fonts/Gilroy/Gilroy-Regular.ttf");
+  font-display: swap;
+}
 
 .font-mazzard-bold{
   font-family: "Mazzard-Bold", sans-serif;
+}
+.font-gilroy-bold{
+  font-family: "Gilroy-Bold", sans-serif;
+}
+.font-gilroy-regular{
+  font-family: "Gilroy-Regular", sans-serif;
+}
+.font-gilroy-medium{
+  font-family: "Gilroy-Medium", sans-serif;
+}
+.font-gilroy-light{
+  font-family: "Gilroy-Light", sans-serif;
 }
 .font-mazzard-medium{
   font-family: "Mazzard-Medium", sans-serif;

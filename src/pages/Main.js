@@ -25,6 +25,8 @@ import ContentSevenTeen from "../components/ContentSevenTeen";
 import ContentEightTeen from "../components/ContentEightTeen";
 import Scroll from "../components/Scroll";
 import ContentN from "../components/ContentN";
+import NewContentOne from "../components/new/NewContentOne";
+import NewNavbar from "../components/new/NewNavbar";
 
 const Main = () => {
     const [scrollWidth, setScrollWidth] = useState(0);
@@ -137,53 +139,53 @@ const Main = () => {
 
     return (
         <div className="main" onWheel={scroll}>
-            <NavBar scroll={scrollWidth} count={count} setScroll={setScroll}/>
-            {Math.abs(scrollWidth) > count ?
-                <div className="contactBlok">
-                    <div className={`contactBlokBody ${state ? "active" : ""}`}>
-                        <a href="https://t.me/FUTBOLTV" className="phone_btn" target="_blank">
-                            <span className="icon icon-telegram"/>
-                        </a>
-                        <a href="mailto:bekzodrakhmonov1995@gmail.com" className="phone_btn">
-                            <span className="icon icon-message"/>
-                        </a>
-                        <a href="tel:+998990896095" className="phone_btn">
-                            <span className="icon icon-tel"/>
-                        </a>
-                        <a href="#" className="phone_btn" onClick={() => setState(false)}>
-                            <span className="icon icon-arrow"/>
-                        </a>
-                    </div>
-                    <button className={`phone_btn ${state ? "hide" : "active"}`} onClick={() => setState(true)}>
-                        <span className="icon icon-tel"/>
-                    </button>
-                </div> : ""
-            }
+            {/*<NavBar scroll={scrollWidth} count={count} setScroll={setScroll}/>*/}
+            {/*{Math.abs(scrollWidth) > count ?*/}
+            {/*    <div className="contactBlok">*/}
+            {/*        <div className={`contactBlokBody ${state ? "active" : ""}`}>*/}
+            {/*            <a href="https://t.me/FUTBOLTV" className="phone_btn" target="_blank">*/}
+            {/*                <span className="icon icon-telegram"/>*/}
+            {/*            </a>*/}
+            {/*            <a href="mailto:bekzodrakhmonov1995@gmail.com" className="phone_btn">*/}
+            {/*                <span className="icon icon-message"/>*/}
+            {/*            </a>*/}
+            {/*            <a href="tel:+998990896095" className="phone_btn">*/}
+            {/*                <span className="icon icon-tel"/>*/}
+            {/*            </a>*/}
+            {/*            <a href="#" className="phone_btn" onClick={() => setState(false)}>*/}
+            {/*                <span className="icon icon-arrow"/>*/}
+            {/*            </a>*/}
+            {/*        </div>*/}
+            {/*        <button className={`phone_btn ${state ? "hide" : "active"}`} onClick={() => setState(true)}>*/}
+            {/*            <span className="icon icon-tel"/>*/}
+            {/*        </button>*/}
+            {/*    </div> : ""*/}
+            {/*}*/}
+            <NewNavbar/>
             <div id="main" className="section" style={{transform: `translateX(${scrollWidth}px)`}}>
-                <Content/>
+                {/*<Content/>*/}
                 {/*<ContentSecond/>*/}
-                <ContentThird/>
-                <ContentFourth scrollWidth={scrollWidth}/>
-                <ContentEleven/>
-                <ContentFive/>
-                <ContentN scrollWidth={scrollWidth}/>
-                <ContentSix/>
-                <ContentEight/>
-                <ContentSeven/>
-                <ContentNine/>
-                <ContentTen scrollWidth={scrollWidth}/>
-                <ContentTwelve/>
-
-                <ContentThirdTeen/>
-                <ContentSixTeen/>
-                <ContentFiveTeen/>
-                <ContentFourTeen scrollWidth={scrollWidth}/>
-
-
-                <ContentSevenTeen/>
+                {/*<ContentThird/>*/}
+                {/*<ContentFourth scrollWidth={scrollWidth}/>*/}
+                {/*<ContentEleven/>*/}
+                {/*<ContentFive/>*/}
+                {/*<ContentN scrollWidth={scrollWidth}/>*/}
+                {/*<ContentSix/>*/}
+                {/*<ContentEight/>*/}
+                {/*<ContentSeven/>*/}
+                {/*<ContentNine/>*/}
+                {/*<ContentTen scrollWidth={scrollWidth}/>*/}
+                {/*<ContentTwelve/>*/}
+                {/*<ContentThirdTeen/>*/}
+                {/*<ContentSixTeen/>*/}
+                {/*<ContentFiveTeen/>*/}
+                {/*<ContentFourTeen scrollWidth={scrollWidth}/>*/}
+                {/*<ContentSevenTeen/>*/}
                 {/*<ContentEightTeen/>*/}
+
+                <NewContentOne/>
             </div>
-            <Scroll scroll={scrollWidth} count={count} scrollText={scrollText}/>
+            {/*<Scroll scroll={scrollWidth} count={count} scrollText={scrollText}/>*/}
 
         </div>
     );
