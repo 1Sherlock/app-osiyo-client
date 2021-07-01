@@ -36,6 +36,8 @@ import NewContentEleven from "../components/new/NewContentEleven";
 import NewContentTwelve from "../components/new/NewContentTwelve";
 import NewContentFour from "../components/new/NewContentFour";
 import NewContentSix from "../components/new/NewContentSix";
+import NewContentSeven from "../components/new/NewContentSeven";
+import NewContentThirty from "../components/new/NewContentThirty";
 
 const Main = () => {
     const [scrollWidth, setScrollWidth] = useState(0);
@@ -198,10 +200,12 @@ const Main = () => {
                 <NewContentFour/>
                 <NewContentFive/>
                 <NewContentSix/>
+                {/*<NewContentSeven/>*/}
                 <NewContentEight/>
                 <NewContentNine/>
                 <NewContentEleven/>
                 <NewContentTwelve/>
+                <NewContentThirty/>
             </div>
             {/*<Scroll scroll={scrollWidth} count={count} scrollText={scrollText}/>*/}
 

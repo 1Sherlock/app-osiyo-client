@@ -77,9 +77,33 @@ p {
     mask-image: url("/icons/new/map-pin.svg");
     -webkit-mask-image: url("/icons/new/map-pin.svg");
   }
+  &.icon-arrow-right {
+    mask-image: url("/icons/new/arrow-right.svg");
+    -webkit-mask-image: url("/icons/new/arrow-right.svg");
+  }
+  &.icon-arrow-left {
+    mask-image: url("/icons/new/arrow-left.svg");
+    -webkit-mask-image: url("/icons/new/arrow-left.svg");
+  }
   &.icon-car {
     mask-image: url("/icons/new/car.svg");
     -webkit-mask-image: url("/icons/new/car.svg");
+  }
+  &.icon-telegram-new {
+    mask-image: url("/icons/new/telegram-new.svg");
+    -webkit-mask-image: url("/icons/new/telegram-new.svg");
+  }
+  &.icon-facebook {
+    mask-image: url("/icons/new/facebook.svg");
+    -webkit-mask-image: url("/icons/new/facebook.svg");
+  }
+  &.icon-instagram {
+    mask-image: url("/icons/new/instagram.svg");
+    -webkit-mask-image: url("/icons/new/instagram.svg");
+  }
+  &.icon-document {
+    mask-image: url("/icons/new/document.svg");
+    -webkit-mask-image: url("/icons/new/document.svg");
   }
   &.icon-amyoba {
     mask-image: url("/icons/new/amyoba.svg");
