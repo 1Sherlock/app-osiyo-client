@@ -73,6 +73,20 @@ p {
     -webkit-mask-image: url("/icons/sale.svg");
   }
 
+  &.icon-map-pin {
+    mask-image: url("/icons/new/map-pin.svg");
+    -webkit-mask-image: url("/icons/new/map-pin.svg");
+  }
+  &.icon-car {
+    mask-image: url("/icons/new/car.svg");
+    -webkit-mask-image: url("/icons/new/car.svg");
+  }
+  &.icon-amyoba {
+    mask-image: url("/icons/new/amyoba.svg");
+    -webkit-mask-image: url("/icons/new/amyoba.svg");
+  }
+
+
   &.icon-menu {
     mask-image: url("/icons/menu.svg");
     -webkit-mask-image: url("/icons/menu.svg");

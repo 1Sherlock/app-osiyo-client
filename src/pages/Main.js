@@ -34,6 +34,8 @@ import NewContentEight from "../components/new/NewContentEight";
 import NewContentNine from "../components/new/NewContentNine";
 import NewContentEleven from "../components/new/NewContentEleven";
 import NewContentTwelve from "../components/new/NewContentTwelve";
+import NewContentFour from "../components/new/NewContentFour";
+import NewContentSix from "../components/new/NewContentSix";
 
 const Main = () => {
     const [scrollWidth, setScrollWidth] = useState(0);
@@ -193,8 +195,9 @@ const Main = () => {
                 <NewContentOne/>
                 <NewContentTwo/>
                 <NewContentThree/>
-
+                <NewContentFour/>
                 <NewContentFive/>
+                <NewContentSix/>
                 <NewContentEight/>
                 <NewContentNine/>
                 <NewContentEleven/>

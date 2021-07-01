@@ -250,6 +250,57 @@ html,body{
     }
   }
 
+  &.new-content-four{
+    background-image: url("/images/new/line.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding: 15.11vh 7.81vw 0;
+    img{
+      width: 100%;
+      height: 42vh;
+      object-fit: cover;
+      border-radius: 30px;
+    }
+
+    .new-content-four-items{
+      padding: 0 12.23vw;
+      &:not(:last-child){
+        margin-top: 6.66vh;
+        margin-bottom: 4.88vh;
+      }
+      .new-content-four-item{
+        display: flex;
+        align-items: center;
+        &:not(:last-child){
+          margin-right: 2.6vw;
+        }
+        .new-content-four-item-left{
+          width: 3.75vw;
+          height: 3.75vw;
+          border: 1px solid #FFE0D4;
+          border-radius: 16px;
+          flex-shrink: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-right: 1.25vw;
+          span{
+            width: 1.56vw;
+            height: 1.56vw;
+            mask-size: 100% 100%;
+            -webkit-mask-size: 100% 100%;
+            background-color: $color-orange;
+          }
+        }
+        p{
+          margin-bottom: 0;
+          font-size: 0.93vw;
+          line-height: 2.88vh;
+        }
+      }
+    }
+  }
+
   &.new-content-five{
     width: 100vw;
     height: 100vh;
