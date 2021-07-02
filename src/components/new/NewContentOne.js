@@ -8,15 +8,15 @@ const NewContentOne = () => {
     return (
         <div className="new-content new-content-one">
             <div className="new-content-one-content">
-                <h3 className="font-gilroy-bold">Будущее центров <br/>
+                <h3 className="font-gilroy-bold" data-aos="fade-up" data-aos-duration="2000">Будущее центров <br/>
                     оптовой торговли</h3>
 
-                <p className="font-gilroy-medium">
+                <p className="font-gilroy-medium" data-aos="fade-right" data-aos-duration="2000">
                     Таргетирование усиливает конструктивный <br/> креатив. Узнавание бренда переворачивает <br/> фирменный охват аудитории
                 </p>
 
-                <div className="d-flex align-items-center">
-                    <button type="button" className="font-gilroy-bold">выбрать помещение </button>
+                <div className="d-flex align-items-center" data-aos="fade-up" data-aos-duration="2000">
+                    <button type="button" className="font-gilroy-bold" >выбрать помещение </button>
                     <div className="d-flex align-items-center ">
                         <div className="play-item">
                             <img src="/newimages/home-img-2.png" alt="home-img-2.png"/>

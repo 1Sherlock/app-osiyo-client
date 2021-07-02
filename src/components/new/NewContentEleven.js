@@ -5,11 +5,11 @@ const NewContentEleven = () => {
         <div className="new-content new-content-eleven">
             <div className="sub-content">
                 <div className="left-eleven-content">
-                    <h1 className="font-gilroy-bold">
+                    <h1 className="font-gilroy-bold animate-text">
                         Выбериет <br/>
                         свой формат
                     </h1>
-                    <p className="font-gilroy-light">
+                    <p className="font-gilroy-light animate-text animate-text-1">
                         Благодаря своим впечатляющим размерам, на территории центра располагается большое количество
                         объектов, создающих условия для будущих владельцев помещений, арендаторов и клиентов. Кроме
                         того, «OSIYO» может вместить более 400.000 человек одновременно.

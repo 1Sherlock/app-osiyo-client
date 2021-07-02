@@ -14,6 +14,8 @@ import Main from "./pages/Main";
 import MediaQuery from 'react-responsive'
 import MainMobile from "./pages/MainMobile";
 import { useMediaQuery } from 'react-responsive'
+import NewMainMobile from "./components/new/mobile/NewMainMobile";
+import NewWelcomeMobile from "./components/new/mobile/NewWelcomeMobile";
 
 function App() {
     const isDesktopOrLaptop = useMediaQuery({
@@ -24,7 +26,11 @@ function App() {
             <Switch>
                 {isDesktopOrLaptop ?
                     <Route path="/" exact component={Main}/> :
-                    <Route path="/" exact component={MainMobile}/>
+                    <>
+                        <Route path="/" exact component={NewMainMobile}/>
+                        <Route path="/welcome" exact component={NewWelcomeMobile}/>
+
+                    </>
                 }
                 <Route path="/second" exact component={Second}/>
                 <Route path="/third" exact component={Third}/>

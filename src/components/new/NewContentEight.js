@@ -5,7 +5,7 @@ const NewContentEight = () => {
         <div className="new-content new-content-eight">
 
             <div className="sub-content">
-                <h1 className="font-gilroy-bold">
+                <h1 className="font-gilroy-bold animate-text">
                     Наши неоспоримые преимущества
                 </h1>
 
@@ -17,16 +17,16 @@ const NewContentEight = () => {
 
                         <div className="childs-right-content">
 
-                        <h3 className="font-gilroy-medium">
+                            <h3 className="font-gilroy-medium animate-text">
                                 Универсальность
                             </h3>
-                            <p className="font-gilroy-light">
-                                «OSIYO» создает все условия для успешной торговли и максимально <br/> удовлетворит потребности клиентов.
+                            <p className="font-gilroy-light animate-text animate-text-1">
+                                «OSIYO» создает все условия для успешной торговли и максимально <br/> удовлетворит
+                                потребности клиентов.
                             </p>
                         </div>
 
                     </div>
-
 
 
                     <div className="childs">
@@ -36,12 +36,12 @@ const NewContentEight = () => {
 
                         <div className="childs-right-content">
 
-                        <h3 className="font-gilroy-medium">
+                            <h3 className="font-gilroy-medium animate-text">
                                 Универсальность
                             </h3>
-                            <p className="font-gilroy-light">
+                            <p className="font-gilroy-light animate-text animate-text-1">
                                 Благодаря своему расположению, «OSIYO» является связующим <br/>
-                                пунктом  для торговых путей Узбекистана, Таджикистана, <br/>
+                                пунктом для торговых путей Узбекистана, Таджикистана, <br/>
                                 Казахстана и Кыргызстана.</p>
                         </div>
 
@@ -54,11 +54,11 @@ const NewContentEight = () => {
                         </span>
 
                         <div className="childs-right-content">
-                            <h3 className="font-gilroy-medium">
+                            <h3 className="font-gilroy-medium animate-text">
                                 Универсальность
                             </h3>
-                            <p className="font-gilroy-light">
-                                Все объекты будут расположены  с учётом их грамотного <br/>
+                            <p className="font-gilroy-light animate-text animate-text-1">
+                                Все объекты будут расположены с учётом их грамотного <br/>
                                 взаимодействия между собой и для удобства наших посетителей.</p>
                         </div>
 

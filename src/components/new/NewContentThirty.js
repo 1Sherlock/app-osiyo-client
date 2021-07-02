@@ -7,8 +7,8 @@ const NewContentThirty = () => {
             <img src="/newimages/six-line.png" alt="line.png" className="new-content-six-line"/>
 
             <div className="new-content-thirty-left">
-                <h3 className="font-gilroy-bold">Наши контакты</h3>
-                <p>
+                <h3 className="font-gilroy-bold animate-text">Наши контакты</h3>
+                <p className="animate-text">
                     Уважаемые клиенты! Ждем вас в нашем <br/>
                     офисе ежедневно с 9.00 до 21.00 <br/>
                     <br/>
@@ -17,44 +17,44 @@ const NewContentThirty = () => {
                     3 проезд, дом 157-а
                 </p>
                 <div className="d-flex">
-                    <a href="#" className="social">
+                    <a href="#" className="social animate-text">
                         <span className="icon icon-telegram-new"/>
                     </a>
-                    <a href="#" className="social">
+                    <a href="#" className="social animate-text">
                         <span className="icon icon-instagram"/>
                     </a>
-                    <a href="#" className="social">
+                    <a href="#" className="social animate-text">
                         <span className="icon icon-facebook"/>
                     </a>
                 </div>
             </div>
             <div className="new-content-thirty-center">
-                <p className="font-gilroy-bold">Телефон</p>
+                <p className="font-gilroy-bold animate-text">Телефон</p>
 
-                <a href="tel:+998912345678" className="tel font-gilroy-bold mb">+998 91 123 45 67</a>
+                <a href="tel:+998912345678" className="tel font-gilroy-bold mb animate-text">+998 91 123 45 67</a>
 
-                <p className="font-gilroy-bold">EMAIL адрес</p>
+                <p className="font-gilroy-bold animate-text">EMAIL адрес</p>
 
-                <a href="mailto:info@osiyo.uz" className="tel font-gilroy-bold">info@osiyo.uz</a>
-                <a href="mailto:marketing@osiyo.uz" className="tel font-gilroy-bold mb">marketing@osiyo.uz</a>
+                <a href="mailto:info@osiyo.uz" className="tel font-gilroy-bold animate-text">info@osiyo.uz</a>
+                <a href="mailto:marketing@osiyo.uz" className="tel font-gilroy-bold mb animate-text">marketing@osiyo.uz</a>
 
-                <p className="font-gilroy-bold">документы</p>
+                <p className="font-gilroy-bold animate-text">документы</p>
 
-                <a href="#" className="files font-gilroy-medium">
+                <a href="#" className="files font-gilroy-medium animate-text">
                     <span className="icon icon-document"/> Сертификат соответствия.pdf
                 </a>
-                <a href="#" className="files font-gilroy-medium">
+                <a href="#" className="files font-gilroy-medium animate-text">
                     <span className="icon icon-document"/> Гувохнома.pdf
                 </a>
             </div>
             <div className="new-content-thirty-right">
-                <h3 className="font-gilroy-bold">Напишите нам</h3>
-                <p>Оставьте свои контакты, и мы с вами <br/>
+                <h3 className="font-gilroy-bold animate-text">Напишите нам</h3>
+                <p className="animate-text">Оставьте свои контакты, и мы с вами <br/>
                     свяжемся в ближайшее время.</p>
 
-                <input type="text" placeholder="Ваше имя"/>
-                <input type="text" placeholder="+998 "/>
-                <div className="d-flex justify-content-between align-items-center">
+                <input type="text" placeholder="Ваше имя" className="animate-text"/>
+                <input type="text" placeholder="+998 " className="animate-text"/>
+                <div className="d-flex justify-content-between align-items-center animate-text">
                     <button type="button" className="font-gilroy-bold">Отправить</button>
                     <span>согласие на обработку <br/> персональных данных </span>
                 </div>

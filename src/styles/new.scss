@@ -130,6 +130,10 @@ html,body{
         border-radius: 50%;
         overflow: hidden;
         position: relative;
+        img{
+          width: 100%;
+          height: 100%;
+        }
         .play-item-content{
           position: absolute;
           left: 0;
@@ -954,3 +958,131 @@ html,body{
   }
 
   }
+
+
+.new-mobile{
+  padding-bottom: 87px;
+  .new-navbar-mobile{
+    padding: 30px 20px;
+
+  }
+  .new-mobile-footer{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding-left: 30px;
+
+    .new-mobile-footer-left{
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      position: relative;
+      margin-right: 10px;
+
+      overflow: hidden;
+      img{
+        width: 100%;
+        height: 100%;
+      }
+      .new-mobile-footer-icon{
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background-color: $color-orange;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        margin: auto;
+
+        span{
+          width: 8px;
+          height: 8px;
+          background-color: #Ffffff;
+        }
+
+      }
+
+    }
+    h4{
+      font-size: 12px;
+      line-height: 15px;
+      margin-bottom: 5px;
+    }
+    span{
+      font-size: 9px;
+      line-height: 11px;
+
+      color: #FF6629;
+    }
+    .new-mobile-footer-arrows{
+      background: rgba(255, 255, 255, 0.8);
+      border-radius: 24px 0px 0px 0px;
+      justify-content: center;
+      padding: 34px 33px;
+      span{
+        width: 15px;
+        height: 8px;
+        background-color: $color-orange;
+        &.disabled{
+          opacity: 0.5;
+        }
+
+      }
+      a{
+        &:not(:last-child){
+          margin-right: 30px;
+        }
+      }
+    }
+  }
+  &.main-mobile{
+    h3{
+      font-size: 32px;
+      line-height: 38px;
+      text-align: center;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    p{
+      font-size: 14px;
+      line-height: 24px;
+      margin-bottom: 30px;
+      text-align: center;
+      padding-left: 37px;
+      padding-right: 37px;
+    }
+    button{
+      background: #FF6629;
+      border-radius: 90px;
+      font-size: 16px;
+      line-height: 20px;
+      text-transform: capitalize;
+      color: #Ffffff;
+      padding: 17px 23px;
+      border: none;
+      outline: 0;
+      margin: 0 auto;
+      display: block;
+      transition: all 0.3s linear;
+      &:active{
+        -webkit-transform: scale(0.9);
+        -moz-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+        -o-transform: scale(0.9);
+        transform: scale(0.9);
+      }
+    }
+
+  }
+  &.welcome-mobile{
+    background-image: url("/images/new/welcome-mobile.png");
+  }
+
+}
+
