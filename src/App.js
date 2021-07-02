@@ -26,6 +26,7 @@ function App() {
                     <Route path="/" exact component={Main}/> :
                     <Route path="/" exact component={MainMobile}/>
                 }
+
                 <Route path="/second" exact component={Second}/>
                 <Route path="/third" exact component={Third}/>
                 <Route path="/fourth" exact component={Fourth}/>
