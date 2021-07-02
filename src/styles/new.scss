@@ -1080,14 +1080,117 @@ html,body{
     }
 
   }
+
+
   &.welcome-mobile{
     background-image: url("/images/new/welcome-mobile.png");
+    width: 100vw;
+    height: 100vh;
+    background-size: 100% 100%;
+
+    h3{
+      font-size: 32px;
+      line-height: 38px;
+      text-align: center;
+      margin-top: 138px;
+      margin-bottom: 20px;
+      color: #fff;
+    }
+    p{
+      font-size: 14px;
+      line-height: 24px;
+      margin-bottom: 30px;
+      text-align: center;
+      padding-left: 37px;
+      padding-right: 37px;
+      color: #fff;
+
+    }
+    button{
+      background: #FF6629;
+      border-radius: 90px;
+      font-size: 16px;
+      line-height: 20px;
+      text-transform: capitalize;
+      color: #Ffffff;
+      padding: 17px 23px;
+      border: none;
+      outline: 0;
+      margin: 0 auto;
+      display: block;
+      transition: all 0.3s linear;
+      &:active{
+        -webkit-transform: scale(0.9);
+        -moz-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+        -o-transform: scale(0.9);
+        transform: scale(0.9);
+      }
+    }
+
+  }
+
+
+  &.about-us-one-mobile{
+
+    height: 100vh;
+    padding: 0  20px ;
+    .header-img{
+      width: 335px;
+      height: 172px;
+      object-fit: cover;
+      border-radius: 30px;
+    }
+
+    .new-content-four-items{
+      padding: 0 ;
+      &:not(:last-child){
+
+      }
+      .new-content-four-item{
+
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+        &:not(:last-child){
+
+        }
+        .new-content-four-item-left{
+
+          border: 2px solid rgba(255, 102, 41, 0.2);
+          box-sizing: border-box;
+          border-radius: 16px;
+          width: 72px;
+          height: 72px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          span{
+
+            mask-size: 100% 100%;
+            -webkit-mask-size: 100% 100%;
+            background-color: $color-orange;
+          }
+        }
+        p{
+          margin-bottom: 0;
+          font-size: 14px;
+          line-height: 20px;
+          color: $color-text;
+
+          margin-left: 20px;
+          width: 180px;
+        }
+      }
+    }
+
+
+    .bottomLine{
+      margin-top: 10px;
+      margin-left: -20px;
+      width: 100vw;
+    }
   }
 
 }
-
-
-
-  &.new-content-five-mobile{
-
-  }
