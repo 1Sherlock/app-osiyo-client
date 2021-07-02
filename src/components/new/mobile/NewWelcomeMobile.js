@@ -5,10 +5,9 @@ const NewWelcomeMobile = () => {
     return (
         <div className="new-mobile welcome-mobile">
 
-
         <div className="new-navbar-mobile d-flex align-items-center justify-content-between">
             <img src="/icons/menu.svg" alt="menu.svg"/>
-            <img src="/icons/logo-mobile.svg" alt="logo-mobile.svg"/>
+            <img src="/icons/logo-mobile-white.svg" alt="logo-mobile.svg"/>
             <img src="icons/phone-mobile.svg" alt="phone-mobile.svg"/>
         </div>
 
@@ -21,7 +20,7 @@ const NewWelcomeMobile = () => {
         </p>
         <button type="button" className="font-gilroy-bold">выбрать помещение</button>
 
-        <NewMobileFooter leftDisabled={true}/>
+        <NewMobileFooter leftDisabled={false} color="#fff" leftLink="/" rightLink="/about"/>
     </div>
     );
 };

@@ -76,7 +76,7 @@ const NewAboutUsOne = () => {
 
             <img src="/newimages/OwalCopy.png" alt="slop.png" className="bottomLine"/>
 
-            <NewMobileFooter leftDisabled={true}/>
+            <NewMobileFooter leftDisabled={false} position="static" pl="0" leftLink="/welcome"/>
 
         </div>
     );

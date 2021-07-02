@@ -77,6 +77,10 @@ p {
     mask-image: url("/icons/new/map-pin.svg");
     -webkit-mask-image: url("/icons/new/map-pin.svg");
   }
+  &.icon-mouse-new {
+    mask-image: url("/icons/new/mouse.svg");
+    -webkit-mask-image: url("/icons/new/mouse.svg");
+  }
   &.icon-arrow-right {
     mask-image: url("/icons/new/arrow-right.svg");
     -webkit-mask-image: url("/icons/new/arrow-right.svg");

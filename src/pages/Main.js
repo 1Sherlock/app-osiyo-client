@@ -38,6 +38,7 @@ import NewContentFour from "../components/new/NewContentFour";
 import NewContentSix from "../components/new/NewContentSix";
 import NewContentSeven from "../components/new/NewContentSeven";
 import NewContentThirty from "../components/new/NewContentThirty";
+import NewFooter from "../components/NewFooter";
 
 const Main = () => {
     const [scrollWidth, setScrollWidth] = useState(0);
@@ -172,7 +173,7 @@ const Main = () => {
             {/*        </button>*/}
             {/*    </div> : ""*/}
             {/*}*/}
-            <NewNavbar/>
+            <NewNavbar scroll={scrollWidth} count={count} setScroll={setScroll}/>
             <div id="main" className="section" style={{transform: `translateX(${scrollWidth}px)`}}>
                 {/*<Content/>*/}
                 {/*<ContentSecond/>*/}
@@ -208,6 +209,7 @@ const Main = () => {
                 <NewContentThirty/>
             </div>
             {/*<Scroll scroll={scrollWidth} count={count} scrollText={scrollText}/>*/}
+            {scrollWidth <= -count * 0.7 ? <NewFooter scroll={scrollWidth} count={count} setScroll={setScroll}/> : ""}
 
         </div>
     );
