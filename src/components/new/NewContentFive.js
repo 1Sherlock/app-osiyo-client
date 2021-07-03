@@ -8,12 +8,9 @@ const NewContentFive = () => {
 
                 </div>
                 <div className="right-content">
-                    <h1 className="font-gilroy-medium animate-text">А вот по мнению аналитиков </h1>
+                    <h1 className="font-gilroy-medium animate-text">Масштабы, которые впечатляют.</h1>
                     <p className="font-gilroy-light animate-text-1 animate-text">
-                        Организация практического взаимодействия, согласно Ф.Котлеру, восстанавливает
-                        <br/> рекламоноситель,
-                        полагаясь на инсайдерскую информацию. Общество потребления
-                        <br/> отталкивает культурный BTL
+                        Для обеспечения комфортности посетителей Центр оптовой торговли «OSIYO» <br/> создает оптимальную среду для шоппинга и отдыха.
                     </p>
 
 

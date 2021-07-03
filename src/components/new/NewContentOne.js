@@ -8,12 +8,11 @@ const NewContentOne = () => {
     return (
         <div className="new-content new-content-one">
             <div className="new-content-one-content">
-                <h3 className="font-gilroy-bold" data-aos="fade-up" data-aos-duration="2000">Будущее центров <br/>
-                    оптовой торговли</h3>
+                <h3 className="font-gilroy-bold" data-aos="fade-up" data-aos-duration="2000">Будущее центров <br/> торговли  и современных <br/> решений.</h3>
 
-                <p className="font-gilroy-medium" data-aos="fade-right" data-aos-duration="2000">
-                    Таргетирование усиливает конструктивный <br/> креатив. Узнавание бренда переворачивает <br/> фирменный охват аудитории
-                </p>
+                {/*<p className="font-gilroy-medium" data-aos="fade-right" data-aos-duration="2000">*/}
+                {/*    Таргетирование усиливает конструктивный <br/> креатив. Узнавание бренда переворачивает <br/> фирменный охват аудитории*/}
+                {/*</p>*/}
 
                 <div className="d-flex align-items-center" data-aos="fade-up" data-aos-duration="2000">
                     <button type="button" className="font-gilroy-bold" >выбрать помещение </button>
@@ -29,6 +28,12 @@ const NewContentOne = () => {
                             <h6 className="font-gilroy-bold">Прямой эфир </h6>
                         </div>
                     </div>
+                </div>
+                <div className="mouse-content d-flex align-items-center font-gilroy-bold">
+                    <div className="mouse-content-left">
+                        <span className="icon icon-mouse-new" />
+                    </div>
+                    Скроллный один раз
                 </div>
             </div>
         </div>

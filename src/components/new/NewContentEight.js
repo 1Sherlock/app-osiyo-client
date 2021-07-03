@@ -6,23 +6,22 @@ const NewContentEight = () => {
 
             <div className="sub-content">
                 <h1 className="font-gilroy-bold animate-text">
-                    Наши неоспоримые преимущества
+                    Разумнейшее расположение
                 </h1>
 
                 <div className="sub-content-childs">
                     <div className="childs">
-                        <span>
+                        <span className="flex-shrink-0">
                             <img src="./icons/bag.svg" alt=""/>
                         </span>
 
                         <div className="childs-right-content">
 
                             <h3 className="font-gilroy-medium animate-text">
-                                Универсальность
+                                Локализация
                             </h3>
                             <p className="font-gilroy-light animate-text animate-text-1">
-                                «OSIYO» создает все условия для успешной торговли и максимально <br/> удовлетворит
-                                потребности клиентов.
+                                Объект находится в Ташкентской области, Уртачирчикском районе, массиве Охунбабаева, на территории махалли «Учокли».
                             </p>
                         </div>
 
@@ -30,36 +29,34 @@ const NewContentEight = () => {
 
 
                     <div className="childs">
-                        <span>
+                        <span className="flex-shrink-0">
                             <img src="/icons/geo.svg" alt=""/>
                         </span>
 
                         <div className="childs-right-content">
 
                             <h3 className="font-gilroy-medium animate-text">
-                                Универсальность
+                                Доступность
                             </h3>
                             <p className="font-gilroy-light animate-text animate-text-1">
-                                Благодаря своему расположению, «OSIYO» является связующим <br/>
-                                пунктом для торговых путей Узбекистана, Таджикистана, <br/>
-                                Казахстана и Кыргызстана.</p>
+                                Это удобное и очень выгодное расположение для торгового бизнеса, поскольку оно является связующим пунктом для торговых путей Узбекистана, Таджикистана, Кыргызстана и Казахстана.
+                            </p>
                         </div>
 
                     </div>
 
 
                     <div className="childs">
-                        <span>
+                        <span className="flex-shrink-0">
                             <img src="/icons/location.svg" alt=""/>
                         </span>
 
                         <div className="childs-right-content">
                             <h3 className="font-gilroy-medium animate-text">
-                                Универсальность
+                                Проходимость
                             </h3>
                             <p className="font-gilroy-light animate-text animate-text-1">
-                                Все объекты будут расположены с учётом их грамотного <br/>
-                                взаимодействия между собой и для удобства наших посетителей.</p>
+                                Объект рассчитан на большой поток клиентов, что только положительно сказывается на экономической составляющей OSIYO и делает его лучшим выбором в сфере центров оптовой торговли</p>
                         </div>
 
                     </div>
