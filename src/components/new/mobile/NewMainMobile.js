@@ -19,7 +19,7 @@ const NewMainMobile = () => {
             </p>
             <button type="button" className="font-gilroy-bold">выбрать помещение</button>
 
-            <NewMobileFooter leftDisabled={true}/>
+            <NewMobileFooter leftDisabled={true} rightLink="/welcome"/>
         </div>
     );
 };

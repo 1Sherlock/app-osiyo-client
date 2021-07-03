@@ -30,7 +30,7 @@ function App() {
                     <>
                         <Route path="/" exact component={NewMainMobile}/>
                         <Route path="/welcome" exact component={NewWelcomeMobile}/>
-                        <Route path="/about-us-one" exact component={NewAboutUsOne}/>
+                        <Route path="/about" exact component={NewAboutUsOne}/>
 
                     </>
                 }
