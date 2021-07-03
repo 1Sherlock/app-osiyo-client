@@ -57,7 +57,7 @@ const NewHistoryMobile = () => {
                 </div>
             </div>
 
-            <img src="/newimages/four-img.png" alt="img.png"/>
+            <img src="/newimages/four-img.png" alt="img.png" className="content-img"/>
 
             <h4 className="font-gilroy-bold">
                 История
