@@ -1320,4 +1320,50 @@ html,body{
     }
   }
 
+  &.history-mobile{
+    h3{
+      font-size: 32px;
+      line-height: 38px;
+      margin-bottom: 20px;
+    }
+    .description{
+      font-size: 16px;
+      line-height: 26px;
+      color: #594D6D;
+      margin-bottom: 50px;
+    }
+    .month{
+      align-items: flex-end;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+
+      border-image-source: linear-gradient(270deg, #FF6629 0.73%, rgba(255, 102, 41, 0) 100%);
+
+
+      p{
+        font-size: 14px;
+        line-height: 24px;
+        text-align: right;
+        color: #CC7552;
+        margin-bottom: 2.44vh;
+      }
+      h5{
+        font-size: 38px;
+        line-height: 24px;
+        color: #FF6629;
+        opacity: 0.5;
+        margin-bottom: 0;
+        &.active{
+          font-size: 60px;
+          line-height: 24px;
+          color: #FF6629;
+        }
+      }
+      .month-item{
+        margin-right: 4.06vw;
+        flex-shrink: 0;
+      }
+    }
+  }
+
 }
