@@ -16,6 +16,7 @@ import MainMobile from "./pages/MainMobile";
 import { useMediaQuery } from 'react-responsive'
 import NewMainMobile from "./components/new/mobile/NewMainMobile";
 import NewWelcomeMobile from "./components/new/mobile/NewWelcomeMobile";
+import NewAboutUsOne from "./components/new/mobile/NewAboutUsOne";
 
 function App() {
     const isDesktopOrLaptop = useMediaQuery({
@@ -29,6 +30,7 @@ function App() {
                     <>
                         <Route path="/" exact component={NewMainMobile}/>
                         <Route path="/welcome" exact component={NewWelcomeMobile}/>
+                        <Route path="/about-us-one" exact component={NewAboutUsOne}/>
 
                     </>
                 }
