@@ -6,7 +6,8 @@ const NewContentEight = () => {
 
             <div className="sub-content">
                 <h1 className="font-gilroy-bold animate-text">
-                    Разумнейшее расположение
+                    Наши неоспоримые
+                    преимущества
                 </h1>
 
                 <div className="sub-content-childs">
@@ -18,11 +19,10 @@ const NewContentEight = () => {
                         <div className="childs-right-content">
 
                             <h3 className="font-gilroy-medium animate-text">
-                                Локализация
+                                Универсальность
                             </h3>
-                            <p className="font-gilroy-light animate-text animate-text-1">
-                                Объект находится в Ташкентской области, Уртачирчикском районе, массиве Охунбабаева, на территории махалли «Учокли».
-                            </p>
+                            <p className="font-gilroy-light animate-text animate-text-1">«OSIYO» создает все условия для
+                                успешной торговли и максимально удовлетворит потребности клиентов. </p>
                         </div>
 
                     </div>
@@ -39,8 +39,9 @@ const NewContentEight = () => {
                                 Доступность
                             </h3>
                             <p className="font-gilroy-light animate-text animate-text-1">
-                                Это удобное и очень выгодное расположение для торгового бизнеса, поскольку оно является связующим пунктом для торговых путей Узбекистана, Таджикистана, Кыргызстана и Казахстана.
-                            </p>
+                                Благодаря своему расположению, «OSIYO» является связующим
+                                пунктом для торговых путей Узбекистана, Таджикистана,
+                                Казахстана и Кыргызстана. </p>
                         </div>
 
                     </div>
@@ -53,10 +54,11 @@ const NewContentEight = () => {
 
                         <div className="childs-right-content">
                             <h3 className="font-gilroy-medium animate-text">
-                                Проходимость
+                                Локализация
                             </h3>
                             <p className="font-gilroy-light animate-text animate-text-1">
-                                Объект рассчитан на большой поток клиентов, что только положительно сказывается на экономической составляющей OSIYO и делает его лучшим выбором в сфере центров оптовой торговли</p>
+                                Все объекты будут расположены с учётом их грамотного взаимодействия между собой и для
+                                удобства наших посетителей.</p>
                         </div>
 
                     </div>

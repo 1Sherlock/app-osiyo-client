@@ -21,6 +21,10 @@ import NewAboutUsOne from "./components/new/mobile/NewAboutUsOne";
 import NewAboutUsTwo from "./components/new/mobile/NewAboutUsTwo";
 
 import NewHistoryMobile from "./components/new/mobile/NewHistoryMobile";
+import LocationThreeMobile from "./components/new/mobile/LocationThreeMobile";
+import NewAboutUsTwoPairMobile from "./components/new/mobile/NewAboutUsTwoPairMobile";
+import NewContactsMobileOne from "./components/new/mobile/NewContactsMobileOne";
+import NewContactMobileTwo from "./components/new/mobile/NewContactMobileTwo";
 
 
 function App() {
@@ -41,6 +45,11 @@ function App() {
 
                         <Route path="/about" exact component={NewAboutUsOne}/>
                         <Route path="/history" exact component={NewHistoryMobile}/>
+
+                        <Route path="/location-three" exact component={LocationThreeMobile}/>
+                        <Route path="/about-us-three" exact component={NewAboutUsTwoPairMobile}/>
+                        <Route path="/contacts-mobile-one" exact component={NewContactsMobileOne}/>
+                        <Route path="/contacts-mobile-two" exact component={NewContactMobileTwo}/>
 
 
                     </>
