@@ -43,7 +43,6 @@ function App() {
                         <Route path="/about-us-one" exact component={NewAboutUsOne}/>
                         <Route path="/about-us-two" exact component={NewAboutUsTwo}/>
 
-                        <Route path="/about" exact component={NewAboutUsOne}/>
                         <Route path="/history" exact component={NewHistoryMobile}/>
 
                         <Route path="/location-three" exact component={LocationThreeMobile}/>

@@ -90,6 +90,10 @@ html,body{
         margin-right: 0;
       }
     }
+
+    animation-name: anim-live;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
   }
 
   .select{
@@ -1090,7 +1094,6 @@ html,body{
   }
 
 .new-mobile{
-  padding-bottom: 87px;
   .new-navbar-mobile{
     padding: 30px 20px;
 
@@ -1171,6 +1174,7 @@ html,body{
     }
   }
   &.main-mobile{
+    min-height: 100vh;
     h3{
       font-size: 32px;
       line-height: 38px;
@@ -1213,10 +1217,12 @@ html,body{
 
   &.welcome-mobile{
     background-image: url("/images/new/welcome-mobile.png");
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    min-height: 100vh;
     background-size: 100% 100%;
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
     h3{
       font-size: 32px;
       line-height: 38px;
@@ -1263,10 +1269,9 @@ html,body{
   &.about-us-one-mobile{
 
 
-    padding: 0  20px ;
+    padding: 40px  20px ;
     .header-img{
-      width: 335px;
-      height: 172px;
+      width: 100%;
       object-fit: cover;
       border-radius: 30px;
     }
@@ -1332,16 +1337,12 @@ html,body{
 
 
       .left-img{
-        margin: 0 20px ;
-
+        padding: 0 20px ;
         border-radius: 30px;
-        width: 335px;
-        height: 262px;
+        width: 100%;
       }
 
       .right-content{
-
-
         h1{
           font-size: 24px;
           line-height: 34px;
@@ -1349,12 +1350,10 @@ html,body{
         }
 
         p{
-
           font-size: 14px;
           line-height: 24px;
           color: #594D6D;
           text-align: center;
-
           font-weight: 600;
           margin-left: 15px;
           margin-right: 15px;
@@ -1399,6 +1398,8 @@ html,body{
   }
 
   &.history-mobile{
+    padding: 20px;
+    padding-top: 50px;
     h3{
       font-size: 32px;
       line-height: 38px;
@@ -1442,6 +1443,20 @@ html,body{
         flex-shrink: 0;
       }
     }
+    img{
+      width: 100%;
+    }
+    h4{
+      font-size: 20px;
+      line-height: 38px;
+      margin-top: 30px;
+      margin-bottom: 20px;
+    }
+    .text{
+      font-size: 18px;
+      line-height: 26px;
+      color: #2D2D2D;
+    }
   }
 
 
@@ -1450,6 +1465,8 @@ html,body{
   &.location-three-mobile {
 
     background: #271006;
+    padding-top: 40px;
+    padding-bottom: 1px;
 
     .sub-content{
 
@@ -1669,6 +1686,7 @@ html,body{
 
   &.contacts-mobile-two{
     position: relative;
+    padding-top: 40px;
 
     .new-content-six-big-line{
       position: absolute;
@@ -1822,5 +1840,21 @@ html,body{
         color: #594D6D;
       }
     }
+  }
+}
+
+@keyframes anim-live {
+  50%{
+    transform: scale(1.2);
+  }
+
+  60% {
+    transform: scale(1);
+  }
+  80%{
+    transform: scale(1.2);
+  }
+  100%{
+    transform: scale(1);
   }
 }
