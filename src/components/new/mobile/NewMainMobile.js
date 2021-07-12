@@ -51,9 +51,7 @@ const NewMainMobile = () => {
                            <span className="icon icon-map-pin"/>
                        </div>
                        <p className="font-gilroy-medium  ">
-                           Удобная инфраструктура
-                           и понятная навигация
-                           на объекте.
+                           Удобная инфраструктура и понятная навигация на объекте
                        </p>
                    </div>
                    <div className="new-content-four-item">
@@ -61,9 +59,7 @@ const NewMainMobile = () => {
                            <span className="icon icon-car"/>
                        </div>
                        <p className="font-gilroy-medium  ">
-                           Продуманная логистика
-                           для удобства покупателей
-                           и владельцев.
+                           Превосходный сервис и обученный персонал
                        </p>
                    </div>
                    <div className="new-content-four-item">
@@ -71,7 +67,7 @@ const NewMainMobile = () => {
                            <span className="icon icon-amyoba"/>
                        </div>
                        <p className="font-gilroy-medium  ">
-                           Инновационный подход ко многим задачам для современного рынка.
+                           Продуманная логистика для удобства покупателей и клиентов
                        </p>
                    </div>
                </div>
@@ -81,9 +77,7 @@ const NewMainMobile = () => {
                            <span className="icon icon-map-pin"/>
                        </div>
                        <p className="font-gilroy-medium  ">
-                           Удобная инфраструктура
-                           и понятная навигация
-                           на объекте.
+                           Контактная поддержка 24/7 и своевременное решение вопросов
                        </p>
                    </div>
                    <div className="new-content-four-item">
@@ -91,9 +85,7 @@ const NewMainMobile = () => {
                            <span className="icon icon-car"/>
                        </div>
                        <p className="font-gilroy-medium  ">
-                           Продуманная логистика
-                           для удобства покупателей
-                           и владельцев.
+                           Инновационный подход ко многим задачам
                        </p>
                    </div>
                    <div className="new-content-four-item">
@@ -101,7 +93,7 @@ const NewMainMobile = () => {
                            <span className="icon icon-amyoba"/>
                        </div>
                        <p className="font-gilroy-medium  ">
-                           Инновационный подход ко многим задачам для современного рынка.
+                           Безопасность хранения товаров в торговых точках и на складских зонах
                        </p>
                    </div>
                </div>
