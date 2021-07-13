@@ -47,6 +47,8 @@ const Main = () => {
     const [scrollText, setScrollText] = useState(<><span className="icon icon-mouse"/> скролл</>);
     const [number, setNumber] = useState(0);
     let scrollTimer;
+    const [screenX, setScreenX] = useState(0);
+    const [screenY, setScreenY] = useState(0);
 
 
     useEffect(() => {
@@ -59,19 +61,19 @@ const Main = () => {
         const scrollElements = document.querySelectorAll(".animate-text");
         const scrollImages = document.querySelectorAll(".img-wrap");
         scrollElements.forEach((el) => {
-            if (el.getBoundingClientRect().left <= count){
+            if (el.getBoundingClientRect().left <= count) {
                 el.classList.add("animate-text-active");
             }
         });
         scrollImages.forEach((el) => {
-            if (el.getBoundingClientRect().left <= count - 100){
+            if (el.getBoundingClientRect().left <= count - 100) {
                 el.classList.add("active")
             }
         })
     }, [scrollWidth])
 
 
-    const scroll = (event)  => {
+    const scroll = (event) => {
         // clearInterval(scrollTimer);
 
         // scrollTimer = setTimeout(() => {
@@ -109,7 +111,7 @@ const Main = () => {
         // }, 2000)
         // setNumber(number + 1);
 
-        if (number === 0){
+        if (number === 0) {
             let el = document.getElementById("main");
             setCount(el.clientWidth);
             // const value = el.clientWidth / 20;
@@ -124,8 +126,8 @@ const Main = () => {
                 // } else {
                 //     setScrollWidth(scrollWidth + value);
                 // }
-                if (scrollWidth < 0){
-                    setScrollWidth(scrollWidth +  count);
+                if (scrollWidth < 0) {
+                    setScrollWidth(scrollWidth + count);
                 }
 
                 console.log('scrolling up');
@@ -134,14 +136,14 @@ const Main = () => {
                 }, 1500);
 
 
-            } else if (event.deltaY > 0 || event.deltaX> 0) {
+            } else if (event.deltaY > 0 || event.deltaX > 0) {
                 // if ((el.scrollWidth - el.clientWidth) - (Math.abs(scrollWidth)) < value) {
                 //     setScrollWidth(0 - (el.scrollWidth - el.clientWidth));
                 // } else {
                 //     setScrollWidth(scrollWidth - value);
                 // }
 
-                if (scrollWidth >  (-10 * count) ){
+                if (scrollWidth > (-10 * count)) {
                     setScrollWidth(scrollWidth - count);
                 }
 
@@ -156,12 +158,12 @@ const Main = () => {
         const scrollElements = document.querySelectorAll(".animate-text");
         const scrollImages = document.querySelectorAll(".img-wrap");
         scrollElements.forEach((el) => {
-            if (el.getBoundingClientRect().left <= count * 1.9){
+            if (el.getBoundingClientRect().left <= count * 1.9) {
                 el.classList.add("animate-text-active");
             }
         });
         scrollImages.forEach((el) => {
-            if (el.getBoundingClientRect().left <= count - 100){
+            if (el.getBoundingClientRect().left <= count - 100) {
                 el.classList.add("active")
             }
         })
@@ -173,6 +175,47 @@ const Main = () => {
         setScrollWidth(0 - value * el.clientWidth);
     }
 
+    const touch = (e) => {
+        // console.log(e);
+    }
+
+    const touchStart = (e) => {
+        console.log("start", e);
+        setScreenX(e.touches[0].clientX);
+        setScreenY(e.touches[0].clientY);
+    }
+
+    const touchEnd = (e) => {
+        console.log("end", e);
+        let tempX = e.changedTouches[0].clientX;
+        let tempY = e.changedTouches[0].clientY;
+        if (screenX - tempX > 150 || screenY - tempY > 150) {
+            if (scrollWidth > (-10 * count)) {
+                setScrollWidth(scrollWidth - count);
+            }
+        }
+        if (screenX - tempX < -150 || screenY - tempY < -150) {
+            if (scrollWidth < 0) {
+                setScrollWidth(scrollWidth + count);
+            }
+        }
+        const scrollElements = document.querySelectorAll(".animate-text");
+        const scrollImages = document.querySelectorAll(".img-wrap");
+        scrollElements.forEach((el) => {
+            if (el.getBoundingClientRect().left <= count * 1.9) {
+                el.classList.add("animate-text-active");
+            }
+        });
+        scrollImages.forEach((el) => {
+            if (el.getBoundingClientRect().left <= count - 100) {
+                el.classList.add("active")
+            }
+        })
+    }
+
+    const touchCancel = (e) => {
+        console.log("cancel", e);
+    }
     return (
         <div className="main" onWheel={scroll}>
             {/*<NavBar scroll={scrollWidth} count={count} setScroll={setScroll}/>*/}
@@ -198,7 +241,8 @@ const Main = () => {
             {/*    </div> : ""*/}
             {/*}*/}
             <NewNavbar scroll={scrollWidth} count={count} setScroll={setScroll}/>
-            <div id="main" className="section" style={{transform: `translateX(${scrollWidth}px)`}}>
+            <div id="main" className="section" style={{transform: `translateX(${scrollWidth}px)`}}
+                 onTouchStart={touchStart} onTouchCancel={touchCancel} onTouchEnd={touchEnd} onTouchMove={touch}>
                 {/*<Content/>*/}
                 {/*<ContentSecond/>*/}
                 {/*<ContentThird/>*/}
