@@ -53,9 +53,9 @@ const Main = () => {
         let el = document.getElementById("main");
         Aos.init();
         setCount(el.clientWidth);
-        if (Math.abs(Math.round(Math.abs(scrollWidth) / count) * count - Math.abs(scrollWidth)) < 200){
-            setScrollWidth(-Math.round(Math.abs(scrollWidth) / count) * count);
-        }
+        // if (Math.abs(Math.round(Math.abs(scrollWidth) / count) * count - Math.abs(scrollWidth)) < 200){
+        //     setScrollWidth(-Math.round(Math.abs(scrollWidth) / count) * count);
+        // }
         const scrollElements = document.querySelectorAll(".animate-text");
         const scrollImages = document.querySelectorAll(".img-wrap");
         scrollElements.forEach((el) => {
@@ -72,68 +72,91 @@ const Main = () => {
 
 
     const scroll = (event)  => {
-        clearInterval(scrollTimer);
+        // clearInterval(scrollTimer);
 
-        scrollTimer = setTimeout(() => {
-            if (number >=5){
-                setScrollWidth(-Math.round(Math.abs(scrollWidth) / count) * count);
-                setNumber(0);
-                const scrollElements = document.querySelectorAll(".animate-text");
-                const scrollImages = document.querySelectorAll(".img-wrap");
-                scrollElements.forEach((el) => {
-                    if (el.getBoundingClientRect().left <= count){
-                        el.classList.add("animate-text-active");
-                    }
-                });
-                scrollImages.forEach((el) => {
-                    if (el.getBoundingClientRect().left <= count - 100){
-                        el.classList.add("active")
-                    }
-                })
-            }
-            clearInterval(scrollTimer)
-        }, 500);
-        setTimeout(() => {
-            const scrollElements = document.querySelectorAll(".animate-text");
-            const scrollImages = document.querySelectorAll(".img-wrap");
-            scrollElements.forEach((el) => {
-                if (el.getBoundingClientRect().left <= count){
-                    el.classList.add("animate-text-active");
-                }
-            });
-            scrollImages.forEach((el) => {
-                if (el.getBoundingClientRect().left <= count - 100){
-                    el.classList.add("active")
-                }
-            })
-        }, 2000)
-        setNumber(number + 1);
+        // scrollTimer = setTimeout(() => {
+        //     if (number >=5){
+        //         setScrollWidth(-Math.round(Math.abs(scrollWidth) / count) * count);
+        //         setNumber(0);
+        //         const scrollElements = document.querySelectorAll(".animate-text");
+        //         const scrollImages = document.querySelectorAll(".img-wrap");
+        //         scrollElements.forEach((el) => {
+        //             if (el.getBoundingClientRect().left <= count){
+        //                 el.classList.add("animate-text-active");
+        //             }
+        //         });
+        //         scrollImages.forEach((el) => {
+        //             if (el.getBoundingClientRect().left <= count - 100){
+        //                 el.classList.add("active")
+        //             }
+        //         })
+        //     }
+        //     clearInterval(scrollTimer)
+        // }, 500);
+        // setTimeout(() => {
+        //     const scrollElements = document.querySelectorAll(".animate-text");
+        //     const scrollImages = document.querySelectorAll(".img-wrap");
+        //     scrollElements.forEach((el) => {
+        //         if (el.getBoundingClientRect().left <= count){
+        //             el.classList.add("animate-text-active");
+        //         }
+        //     });
+        //     scrollImages.forEach((el) => {
+        //         if (el.getBoundingClientRect().left <= count - 100){
+        //             el.classList.add("active")
+        //         }
+        //     })
+        // }, 2000)
+        // setNumber(number + 1);
 
-        let el = document.getElementById("main");
-        setCount(el.clientWidth);
-        // const value = el.clientWidth / 20;
-        // const value = el.clientWidth;
-        const value = 200;
-        if (event.deltaY < 0) {
-            if (Math.abs(scrollWidth) < value) {
-                setScrollWidth(0);
-            } else {
-                setScrollWidth(scrollWidth + value);
+        if (number === 0){
+            let el = document.getElementById("main");
+            setCount(el.clientWidth);
+            // const value = el.clientWidth / 20;
+            // const value = el.clientWidth;
+            clearTimeout(scrollTimer);
+            const value = 200;
+            console.log(scrollTimer)
+            setNumber(1);
+            if (event.deltaY < 0 || event.deltaX < 0) {
+                // if (Math.abs(scrollWidth) < value) {
+                //     setScrollWidth(0);
+                // } else {
+                //     setScrollWidth(scrollWidth + value);
+                // }
+                if (scrollWidth < 0){
+                    setScrollWidth(scrollWidth +  count);
+                }
+
+                console.log('scrolling up');
+                scrollTimer = setTimeout(() => {
+                    setNumber(0);
+                }, 1500);
+
+
+            } else if (event.deltaY > 0 || event.deltaX> 0) {
+                // if ((el.scrollWidth - el.clientWidth) - (Math.abs(scrollWidth)) < value) {
+                //     setScrollWidth(0 - (el.scrollWidth - el.clientWidth));
+                // } else {
+                //     setScrollWidth(scrollWidth - value);
+                // }
+
+                if (scrollWidth >  (-10 * count) ){
+                    setScrollWidth(scrollWidth - count);
+                }
+
+                scrollTimer = setTimeout(() => {
+                    setNumber(0);
+                }, 1500)
+
             }
-            console.log('scrolling up');
-        } else if (event.deltaY > 0) {
-            if ((el.scrollWidth - el.clientWidth) - (Math.abs(scrollWidth)) < value) {
-                setScrollWidth(0 - (el.scrollWidth - el.clientWidth));
-            } else {
-                setScrollWidth(scrollWidth - value);
-            }
+
+
         }
-
-
         const scrollElements = document.querySelectorAll(".animate-text");
         const scrollImages = document.querySelectorAll(".img-wrap");
         scrollElements.forEach((el) => {
-            if (el.getBoundingClientRect().left <= count){
+            if (el.getBoundingClientRect().left <= count * 1.9){
                 el.classList.add("animate-text-active");
             }
         });
@@ -142,6 +165,7 @@ const Main = () => {
                 el.classList.add("active")
             }
         })
+
     };
 
     const setScroll = (value) => {
